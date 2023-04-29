@@ -8,6 +8,9 @@ const Budget = () => {
     const updateBudget = (newBudget) => {
         if(newBudget < totalExpenses) {
             alert("Budget can't be lower than spendings !");
+        } 
+        else if(newBudget > 20000) {
+            alert("The value cannot exceed 20,000 !");
         }
         else {
             dispatch({type:'SET_BUDGET', payload: newBudget});

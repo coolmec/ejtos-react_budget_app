@@ -17,7 +17,7 @@ const Currency = () => {
             <button type="button" className="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Currency({currency.value})
             </button>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu bg-success">
                 {currencies.map(data => 
                     <li key={data.id}>
                         <button className="dropdown-item" type="button" onClick={() => changeCurrency(data)}>
